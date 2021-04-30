@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div id="editor">
+        <div id="tools">
+            <span id="format"><b>B</b></span>
+            <span id="format"><i>I</i></span>
+            <span id="format"><u>U</u></span>
+            <span id="format"><s>S</s></span>
+            <span id="tc">A<input type="color"></span>
+            <span id="bgc">A<input type="color"></span>
+            <span>X<sub>2</sub></span>
+            <span>X<sup>2</sup></span>
+            <select name="fFace">
+                <option value="font1">font1</option>
+                <option value="font1">font1</option>
+                <option value="font1">font1</option>
+                <option value="font1">font1</option>
+                <option value="font1">font1</option>
+            </select>
+            <select name="fSize" >
+                <option value=""></option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="30">30</option>
+            </select>
+            <span id="list" value="ul"><i class="fas fa-list-ul"></i></span>
+            <span id="list" value="ol"><i class="fas fa-list-ol"></i></span>
+            <span id="addImg"><i class="far fa-image"></i></span>
+            <input type="file" accept="image/*">
+            <span id="link"><i class="fas fa-link"></i></span>
+            <input type="text" id="link_addr" placeholder="Type or Paste your link here">
+            <span><i class="fas fa-code"></i></span>
+          </div>
+          <div id="textarea" contenteditable="true">Put your Note Here <b>and this for test</b></div>
+          <button id="addNote">Add</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
