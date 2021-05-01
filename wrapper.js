@@ -1,9 +1,7 @@
 (function () {
     const editor = document.querySelector("#textarea");
     var currentSelection = [];
-    editor.addEventListener('mouseup', () => {
-        currentSelection = myCaret.setState();
-    });
+    
     const anyArray = ['b', 'i', 'u', 's'];
     const elements = document.querySelectorAll('#format');
     for (const key in elements) {
@@ -84,6 +82,9 @@
         }
     })
 
+    editor.addEventListener('mouseup', () => {
+        currentSelection = myCaret.setState();
+    });
     editor.addEventListener('keydown', vscodeSort.processKeyEvent);
     editor.addEventListener('keyup', () => {
         currentSelection = myCaret.setState();
